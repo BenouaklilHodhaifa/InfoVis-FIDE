@@ -71,11 +71,26 @@ svg.append("text")
     .style("font-weight", "500")
     .text("Density (Player Concentration)");
 
+async function loadCsvGz(url) {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status} ${res.statusText}`);
+    const buf = await res.arrayBuffer();
+
+    // unzip bytes -> bytes
+    const decompressed = window.pako.ungzip(new Uint8Array(buf));
+
+    // bytes -> text
+    const text = new TextDecoder("utf-8").decode(decompressed);
+
+    // text -> rows
+    return d3.csvParse(text);
+}
+
+
 // --- 3. Load Data ---
 Promise.all([
-    // Add a timestamp (?v=...) to force the browser to ignore old cached files
-    d3.json("structure.json?v=" + new Date().getTime()), 
-    d3.csv("processed_ratings.csv")
+    d3.json("structure.json?v=" + new Date().getTime()),
+    loadCsvGz("processed_ratings.csv.gz")
 ]).then(([structure, data]) => {
     hierarchyData = structure;
     rawData = data;
