@@ -1,0 +1,227 @@
+/* ==========================================
+   Chess Analytics Visualization - Stylesheet
+   ========================================== */
+
+/* --- 1. Global Reset & Typography --- */
+body {
+    /* Use system fonts for best performance and native look */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8; /* Soft gray background (easier on eyes than pure white) */
+    color: #333;               /* Dark gray text (softer than pure black) */
+    height: 100vh;             /* Force full viewport height */
+    overflow: hidden;          /* Prevent the whole page from scrolling; specific areas will scroll instead */
+}
+
+/* --- 2. Main Layout (Flexbox) --- */
+#dashboard {
+    display: flex;   /* Creates a row: Sidebar | Main View */
+    height: 100vh;
+    width: 100vw;
+}
+
+/* --- 3. Sidebar Styling --- */
+#sidebar {
+    width: 300px;    /* Fixed width */
+    background: #ffffff;
+    border-right: 1px solid #e1e4e8; /* Subtle separator line */
+    display: flex;
+    flex-direction: column; /* Stack Title -> Search -> Tree */
+    padding: 0;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.02); /* Very subtle shadow for depth */
+    z-index: 10;     /* Ensure it sits "above" the chart layer visually */
+}
+
+#sidebar h2 {
+    font-size: 1.2rem;
+    padding: 20px 20px 10px 20px;
+    margin: 0;
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+}
+
+/* Search Box */
+#searchBox {
+    margin: 15px 20px;
+    padding: 10px;
+    width: calc(100% - 40px); /* Fill width minus margins */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.2s; /* Smooth highlight on click */
+}
+#searchBox:focus {
+    outline: none;
+    border-color: #3498db; /* Highlight blue when typing */
+}
+
+/* Tree Container (The scrollable country list) */
+#tree-container {
+    flex-grow: 1;      /* Fill all remaining vertical space */
+    overflow-y: auto;  /* Enable scroll only inside this box */
+    padding: 10px 20px 20px 20px;
+}
+
+/* Hierarchical List Styling */
+#tree-container ul {
+    list-style: none; /* Remove bullets */
+    padding-left: 20px; /* Indent child levels */
+    margin: 5px 0;
+}
+#tree-container li {
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Checkboxes */
+#tree-container input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.1); /* Make them slightly easier to click */
+    cursor: pointer;
+}
+
+/* --- 4. Main View Area (Right Side) --- */
+#main-view {
+    flex-grow: 1; /* Take up all remaining width */
+    display: flex;
+    flex-direction: column; /* Stack Chart -> Controls */
+    padding: 30px;
+    gap: 20px;    /* Space between Chart and Controls */
+    overflow: hidden;
+}
+
+/* Chart Container (The white card) */
+#chart-container {
+    flex-grow: 1; /* Expand to fill available height */
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Soft card shadow */
+    padding: 20px;
+    position: relative; /* Essential for absolute positioning of Legend/Tooltip */
+}
+
+/* --- 5. Controls Footer (Bottom Bar) --- */
+#controls {
+    background: #ffffff;
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    flex-shrink: 0; /* Prevent this bar from squishing if screen is small */
+}
+
+/* Play/Pause Button */
+#play-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px; /* Pill shape */
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#play-btn:hover { background-color: #2980b9; } /* Darker blue on hover */
+#play-btn:active { transform: scale(0.98); }   /* Click effect */
+
+/* Time Slider Area */
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;      /* Stretch to fill gap between button and date */
+    margin-left: 30px;
+    gap: 15px;
+}
+
+/* Date Label Badge */
+#date-label {
+    font-family: 'Courier New', monospace; /* Monospace prevents jitter when numbers change */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3498db;
+    background: #eaf6fd; /* Very light blue bg */
+    padding: 5px 10px;
+    border-radius: 6px;
+    min-width: 100px;
+    text-align: center;
+}
+
+/* Custom Range Slider Styling (Webkit/Chrome/Safari) */
+input[type=range] {
+    -webkit-appearance: none; /* Remove default styling */
+    width: 100%;
+    background: transparent;
+}
+
+/* The Thumb (The round handle you drag) */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #3498db;
+    cursor: pointer;
+    margin-top: -8px; /* Centers thumb on the track */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* The Track (The line) */
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background: #ddd;
+    border-radius: 2px;
+}
+
+/* --- 6. Overlays (Legend & Tooltip) --- */
+
+/* Legend Box */
+#legend {
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    background: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 13px;
+    pointer-events: none; /* Allows clicking through the legend if needed */
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+/* Hover Tooltip */
+#tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8); /* Dark background */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none; /* Crucial: prevents tooltip from blocking mouse events */
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 100;
+}

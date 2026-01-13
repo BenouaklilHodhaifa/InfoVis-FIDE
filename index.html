@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Ratings: Geopolitical Shift</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<div id="dashboard">
+    <div id="sidebar">
+        <h2>Filter Locations</h2>
+        <input type="text" id="searchBox" placeholder="Search country...">
+        <div id="tree-container"></div>
+    </div>
+
+    <div id="main-view">
+        
+        <div id="chart-container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <h3 style="margin: 0; color: #2c3e50;">Global Rating Distribution</h3>
+                <span style="font-size: 0.9em; color: #7f8c8d;">Data Source: FIDE (2015-2025)</span>
+            </div>
+            
+            <div id="legend"></div>
+            <div id="tooltip"></div>
+            </div>
+        
+        <div id="controls">
+            <button id="play-btn">▶ Play</button>
+            <div class="slider-wrapper">
+                <label id="date-label">Feb 2015</label>
+                <input type="range" id="timeSlider" min="0" max="100" value="0">
+            </div>
+        </div>
+
+    </div> </div> <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,967 @@
+{
+    "name": "World",
+    "id": "World",
+    "children": [
+        {
+            "name": "Asia",
+            "id": "Asia",
+            "children": [
+                {
+                    "name": "Southern Asia",
+                    "id": "Southern Asia",
+                    "children": [
+                        {
+                            "name": "Afghanistan",
+                            "id": "AFG"
+                        },
+                        {
+                            "name": "Bangladesh",
+                            "id": "BAN"
+                        },
+                        {
+                            "name": "Bhutan",
+                            "id": "BHU"
+                        },
+                        {
+                            "name": "India",
+                            "id": "IND"
+                        },
+                        {
+                            "name": "Iran",
+                            "id": "IRI"
+                        },
+                        {
+                            "name": "Maldives",
+                            "id": "MDV"
+                        },
+                        {
+                            "name": "Nepal",
+                            "id": "NEP"
+                        },
+                        {
+                            "name": "Pakistan",
+                            "id": "PAK"
+                        },
+                        {
+                            "name": "Sri Lanka",
+                            "id": "SRI"
+                        }
+                    ]
+                },
+                {
+                    "name": "Western Asia",
+                    "id": "Western Asia",
+                    "children": [
+                        {
+                            "name": "Armenia",
+                            "id": "ARM"
+                        },
+                        {
+                            "name": "Azerbaijan",
+                            "id": "AZE"
+                        },
+                        {
+                            "name": "Bahrain",
+                            "id": "BRN"
+                        },
+                        {
+                            "name": "Cyprus",
+                            "id": "CYP"
+                        },
+                        {
+                            "name": "Georgia",
+                            "id": "GEO"
+                        },
+                        {
+                            "name": "Iraq",
+                            "id": "IRQ"
+                        },
+                        {
+                            "name": "Israel",
+                            "id": "ISR"
+                        },
+                        {
+                            "name": "Jordan",
+                            "id": "JOR"
+                        },
+                        {
+                            "name": "Kuwait",
+                            "id": "KUW"
+                        },
+                        {
+                            "name": "Lebanon",
+                            "id": "LBN"
+                        },
+                        {
+                            "name": "Oman",
+                            "id": "OMA"
+                        },
+                        {
+                            "name": "Qatar",
+                            "id": "QAT"
+                        },
+                        {
+                            "name": "Saudi Arabia",
+                            "id": "KSA"
+                        },
+                        {
+                            "name": "Syria",
+                            "id": "SYR"
+                        },
+                        {
+                            "name": "Turkey",
+                            "id": "TUR"
+                        },
+                        {
+                            "name": "United Arab Emirates",
+                            "id": "UAE"
+                        },
+                        {
+                            "name": "Yemen",
+                            "id": "YEM"
+                        }
+                    ]
+                },
+                {
+                    "name": "South-eastern Asia",
+                    "id": "South-eastern Asia",
+                    "children": [
+                        {
+                            "name": "Brunei",
+                            "id": "BRU"
+                        },
+                        {
+                            "name": "Cambodia",
+                            "id": "CAM"
+                        },
+                        {
+                            "name": "Indonesia",
+                            "id": "INA"
+                        },
+                        {
+                            "name": "Laos",
+                            "id": "LAO"
+                        },
+                        {
+                            "name": "Malaysia",
+                            "id": "MAS"
+                        },
+                        {
+                            "name": "Myanmar",
+                            "id": "MYA"
+                        },
+                        {
+                            "name": "Philippines",
+                            "id": "PHI"
+                        },
+                        {
+                            "name": "Singapore",
+                            "id": "SGP"
+                        },
+                        {
+                            "name": "Thailand",
+                            "id": "THA"
+                        },
+                        {
+                            "name": "Timor-Leste",
+                            "id": "TLS"
+                        },
+                        {
+                            "name": "Vietnam",
+                            "id": "VIE"
+                        }
+                    ]
+                },
+                {
+                    "name": "Eastern Asia",
+                    "id": "Eastern Asia",
+                    "children": [
+                        {
+                            "name": "China",
+                            "id": "CHN"
+                        },
+                        {
+                            "name": "Japan",
+                            "id": "JPN"
+                        },
+                        {
+                            "name": "South Korea",
+                            "id": "KOR"
+                        },
+                        {
+                            "name": "Mongolia",
+                            "id": "MGL"
+                        }
+                    ]
+                },
+                {
+                    "name": "Central Asia",
+                    "id": "Central Asia",
+                    "children": [
+                        {
+                            "name": "Kazakhstan",
+                            "id": "KAZ"
+                        },
+                        {
+                            "name": "Kyrgyzstan",
+                            "id": "KGZ"
+                        },
+                        {
+                            "name": "Tajikistan",
+                            "id": "TJK"
+                        },
+                        {
+                            "name": "Uzbekistan",
+                            "id": "UZB"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Europe",
+            "id": "Europe",
+            "children": [
+                {
+                    "name": "Southern Europe",
+                    "id": "Southern Europe",
+                    "children": [
+                        {
+                            "name": "Albania",
+                            "id": "ALB"
+                        },
+                        {
+                            "name": "Bosnia and Herzegovina",
+                            "id": "BIH"
+                        },
+                        {
+                            "name": "Croatia",
+                            "id": "CRO"
+                        },
+                        {
+                            "name": "Greece",
+                            "id": "GRE"
+                        },
+                        {
+                            "name": "Italy",
+                            "id": "ITA"
+                        },
+                        {
+                            "name": "Malta",
+                            "id": "MLT"
+                        },
+                        {
+                            "name": "Montenegro",
+                            "id": "MNE"
+                        },
+                        {
+                            "name": "North Macedonia",
+                            "id": "MKD"
+                        },
+                        {
+                            "name": "Portugal",
+                            "id": "POR"
+                        },
+                        {
+                            "name": "Serbia",
+                            "id": "SRB"
+                        },
+                        {
+                            "name": "Slovenia",
+                            "id": "SLO"
+                        },
+                        {
+                            "name": "Spain",
+                            "id": "ESP"
+                        }
+                    ]
+                },
+                {
+                    "name": "Western Europe",
+                    "id": "Western Europe",
+                    "children": [
+                        {
+                            "name": "Austria",
+                            "id": "AUT"
+                        },
+                        {
+                            "name": "Belgium",
+                            "id": "BEL"
+                        },
+                        {
+                            "name": "France",
+                            "id": "FRA"
+                        },
+                        {
+                            "name": "Germany",
+                            "id": "GER"
+                        },
+                        {
+                            "name": "Luxembourg",
+                            "id": "LUX"
+                        },
+                        {
+                            "name": "Netherlands",
+                            "id": "NED"
+                        },
+                        {
+                            "name": "Switzerland",
+                            "id": "SUI"
+                        }
+                    ]
+                },
+                {
+                    "name": "Eastern Europe",
+                    "id": "Eastern Europe",
+                    "children": [
+                        {
+                            "name": "Belarus",
+                            "id": "BLR"
+                        },
+                        {
+                            "name": "Bulgaria",
+                            "id": "BUL"
+                        },
+                        {
+                            "name": "Czech Republic",
+                            "id": "CZE"
+                        },
+                        {
+                            "name": "Hungary",
+                            "id": "HUN"
+                        },
+                        {
+                            "name": "Moldova",
+                            "id": "MDA"
+                        },
+                        {
+                            "name": "Poland",
+                            "id": "POL"
+                        },
+                        {
+                            "name": "Romania",
+                            "id": "ROU"
+                        },
+                        {
+                            "name": "Russia",
+                            "id": "RUS"
+                        },
+                        {
+                            "name": "Slovakia",
+                            "id": "SVK"
+                        },
+                        {
+                            "name": "Ukraine",
+                            "id": "UKR"
+                        }
+                    ]
+                },
+                {
+                    "name": "Northern Europe",
+                    "id": "Northern Europe",
+                    "children": [
+                        {
+                            "name": "Denmark",
+                            "id": "DEN"
+                        },
+                        {
+                            "name": "Estonia",
+                            "id": "EST"
+                        },
+                        {
+                            "name": "Finland",
+                            "id": "FIN"
+                        },
+                        {
+                            "name": "Great Britain",
+                            "id": "GBR"
+                        },
+                        {
+                            "name": "Iceland",
+                            "id": "ISL"
+                        },
+                        {
+                            "name": "Ireland",
+                            "id": "IRL"
+                        },
+                        {
+                            "name": "Latvia",
+                            "id": "LAT"
+                        },
+                        {
+                            "name": "Lithuania",
+                            "id": "LTU"
+                        },
+                        {
+                            "name": "Norway",
+                            "id": "NOR"
+                        },
+                        {
+                            "name": "Sweden",
+                            "id": "SWE"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Africa",
+            "id": "Africa",
+            "children": [
+                {
+                    "name": "Northern Africa",
+                    "id": "Northern Africa",
+                    "children": [
+                        {
+                            "name": "Algeria",
+                            "id": "ALG"
+                        },
+                        {
+                            "name": "Egypt",
+                            "id": "EGY"
+                        },
+                        {
+                            "name": "Morocco",
+                            "id": "MAR"
+                        },
+                        {
+                            "name": "Tunisia",
+                            "id": "TUN"
+                        }
+                    ]
+                },
+                {
+                    "name": "Sub-Saharan Africa",
+                    "id": "Sub-Saharan Africa",
+                    "children": [
+                        {
+                            "name": "Angola",
+                            "id": "ANG"
+                        },
+                        {
+                            "name": "Benin",
+                            "id": "BEN"
+                        },
+                        {
+                            "name": "Botswana",
+                            "id": "BOT"
+                        },
+                        {
+                            "name": "Burkina Faso",
+                            "id": "BUR"
+                        },
+                        {
+                            "name": "Burundi",
+                            "id": "BDI"
+                        },
+                        {
+                            "name": "Cameroon",
+                            "id": "CMR"
+                        },
+                        {
+                            "name": "Cape Verde",
+                            "id": "CPV"
+                        },
+                        {
+                            "name": "Chad",
+                            "id": "CHA"
+                        },
+                        {
+                            "name": "Congo (Democratic Republic)",
+                            "id": "COD"
+                        },
+                        {
+                            "name": "Eswatini",
+                            "id": "SWZ"
+                        },
+                        {
+                            "name": "Ethiopia",
+                            "id": "ETH"
+                        },
+                        {
+                            "name": "Gambia",
+                            "id": "GAM"
+                        },
+                        {
+                            "name": "Ghana",
+                            "id": "GHA"
+                        },
+                        {
+                            "name": "Guinea",
+                            "id": "GUI"
+                        },
+                        {
+                            "name": "Kenya",
+                            "id": "KEN"
+                        },
+                        {
+                            "name": "Lesotho",
+                            "id": "LES"
+                        },
+                        {
+                            "name": "Liberia",
+                            "id": "LBR"
+                        },
+                        {
+                            "name": "Madagascar",
+                            "id": "MAD"
+                        },
+                        {
+                            "name": "Malawi",
+                            "id": "MAW"
+                        },
+                        {
+                            "name": "Mali",
+                            "id": "MLI"
+                        },
+                        {
+                            "name": "Mauritania",
+                            "id": "MTN"
+                        },
+                        {
+                            "name": "Mauritius",
+                            "id": "MRI"
+                        },
+                        {
+                            "name": "Mozambique",
+                            "id": "MOZ"
+                        },
+                        {
+                            "name": "Namibia",
+                            "id": "NAM"
+                        },
+                        {
+                            "name": "Niger",
+                            "id": "NIG"
+                        },
+                        {
+                            "name": "Nigeria",
+                            "id": "NGR"
+                        },
+                        {
+                            "name": "Rwanda",
+                            "id": "RWA"
+                        },
+                        {
+                            "name": "Senegal",
+                            "id": "SEN"
+                        },
+                        {
+                            "name": "Sierra Leone",
+                            "id": "SLE"
+                        },
+                        {
+                            "name": "South Africa",
+                            "id": "RSA"
+                        },
+                        {
+                            "name": "Tanzania",
+                            "id": "TAN"
+                        },
+                        {
+                            "name": "Togo",
+                            "id": "TOG"
+                        },
+                        {
+                            "name": "Uganda",
+                            "id": "UGA"
+                        },
+                        {
+                            "name": "Zambia",
+                            "id": "ZAM"
+                        },
+                        {
+                            "name": "Zimbabwe",
+                            "id": "ZIM"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Other",
+            "id": "Other",
+            "children": [
+                {
+                    "name": "Other",
+                    "id": "Other",
+                    "children": [
+                        {
+                            "name": "American Samoa",
+                            "id": "ASA"
+                        },
+                        {
+                            "name": "Andorra",
+                            "id": "AND"
+                        },
+                        {
+                            "name": "Antigua and Barbuda",
+                            "id": "ANT"
+                        },
+                        {
+                            "name": "Aruba",
+                            "id": "ARU"
+                        },
+                        {
+                            "name": "Bermuda",
+                            "id": "BER"
+                        },
+                        {
+                            "name": "British Virgin Islands",
+                            "id": "IVB"
+                        },
+                        {
+                            "name": "Cayman Islands",
+                            "id": "CAY"
+                        },
+                        {
+                            "name": "Central African Republic",
+                            "id": "CAF"
+                        },
+                        {
+                            "name": "Comoros",
+                            "id": "COM"
+                        },
+                        {
+                            "name": "Congo (Republic)",
+                            "id": "CGO"
+                        },
+                        {
+                            "name": "Cook Islands",
+                            "id": "COK"
+                        },
+                        {
+                            "name": "Djibouti",
+                            "id": "DJI"
+                        },
+                        {
+                            "name": "Dominica",
+                            "id": "DMA"
+                        },
+                        {
+                            "name": "Equatorial Guinea",
+                            "id": "GEQ"
+                        },
+                        {
+                            "name": "Eritrea",
+                            "id": "ERI"
+                        },
+                        {
+                            "name": "Gabon",
+                            "id": "GAB"
+                        },
+                        {
+                            "name": "Grenada",
+                            "id": "GRN"
+                        },
+                        {
+                            "name": "Guam",
+                            "id": "GUM"
+                        },
+                        {
+                            "name": "Guinea-Bissau",
+                            "id": "GBS"
+                        },
+                        {
+                            "name": "Haiti",
+                            "id": "HAI"
+                        },
+                        {
+                            "name": "Hong Kong",
+                            "id": "HKG"
+                        },
+                        {
+                            "name": "Kiribati",
+                            "id": "KIR"
+                        },
+                        {
+                            "name": "Kosovo",
+                            "id": "KOS"
+                        },
+                        {
+                            "name": "Libya",
+                            "id": "LBA"
+                        },
+                        {
+                            "name": "Liechtenstein",
+                            "id": "LIE"
+                        },
+                        {
+                            "name": "Marshall Islands",
+                            "id": "MHL"
+                        },
+                        {
+                            "name": "Micronesia",
+                            "id": "FSM"
+                        },
+                        {
+                            "name": "Monaco",
+                            "id": "MON"
+                        },
+                        {
+                            "name": "Nauru",
+                            "id": "NRU"
+                        },
+                        {
+                            "name": "North Korea",
+                            "id": "PRK"
+                        },
+                        {
+                            "name": "Palau",
+                            "id": "PLW"
+                        },
+                        {
+                            "name": "Palestine",
+                            "id": "PLE"
+                        },
+                        {
+                            "name": "Puerto Rico",
+                            "id": "PUR"
+                        },
+                        {
+                            "name": "Saint Kitts and Nevis",
+                            "id": "SKN"
+                        },
+                        {
+                            "name": "Saint Lucia",
+                            "id": "LCA"
+                        },
+                        {
+                            "name": "Saint Vincent and the Grenadines",
+                            "id": "VIN"
+                        },
+                        {
+                            "name": "Samoa",
+                            "id": "SAM"
+                        },
+                        {
+                            "name": "San Marino",
+                            "id": "SMR"
+                        },
+                        {
+                            "name": "Sao Tome and Principe",
+                            "id": "STP"
+                        },
+                        {
+                            "name": "Seychelles",
+                            "id": "SEY"
+                        },
+                        {
+                            "name": "Solomon Islands",
+                            "id": "SOL"
+                        },
+                        {
+                            "name": "Somalia",
+                            "id": "SOM"
+                        },
+                        {
+                            "name": "South Sudan",
+                            "id": "SSD"
+                        },
+                        {
+                            "name": "Sudan",
+                            "id": "SUD"
+                        },
+                        {
+                            "name": "Taiwan",
+                            "id": "TPE"
+                        },
+                        {
+                            "name": "Tonga",
+                            "id": "TGA"
+                        },
+                        {
+                            "name": "Turkmenistan",
+                            "id": "TKM"
+                        },
+                        {
+                            "name": "Tuvalu",
+                            "id": "TUV"
+                        },
+                        {
+                            "name": "Virgin Islands",
+                            "id": "ISV"
+                        },
+                        {
+                            "name": "FIDE",
+                            "id": "FID"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Americas",
+            "id": "Americas",
+            "children": [
+                {
+                    "name": "Latin America and the Caribbean",
+                    "id": "Latin America and the Caribbean",
+                    "children": [
+                        {
+                            "name": "Argentina",
+                            "id": "ARG"
+                        },
+                        {
+                            "name": "Bahamas",
+                            "id": "BAH"
+                        },
+                        {
+                            "name": "Barbados",
+                            "id": "BAR"
+                        },
+                        {
+                            "name": "Belize",
+                            "id": "BIZ"
+                        },
+                        {
+                            "name": "Bolivia",
+                            "id": "BOL"
+                        },
+                        {
+                            "name": "Brazil",
+                            "id": "BRA"
+                        },
+                        {
+                            "name": "Chile",
+                            "id": "CHI"
+                        },
+                        {
+                            "name": "Colombia",
+                            "id": "COL"
+                        },
+                        {
+                            "name": "Costa Rica",
+                            "id": "CRC"
+                        },
+                        {
+                            "name": "Cuba",
+                            "id": "CUB"
+                        },
+                        {
+                            "name": "Dominican Republic",
+                            "id": "DOM"
+                        },
+                        {
+                            "name": "Ecuador",
+                            "id": "ECU"
+                        },
+                        {
+                            "name": "El Salvador",
+                            "id": "ESA"
+                        },
+                        {
+                            "name": "Guatemala",
+                            "id": "GUA"
+                        },
+                        {
+                            "name": "Guyana",
+                            "id": "GUY"
+                        },
+                        {
+                            "name": "Honduras",
+                            "id": "HON"
+                        },
+                        {
+                            "name": "Jamaica",
+                            "id": "JAM"
+                        },
+                        {
+                            "name": "Mexico",
+                            "id": "MEX"
+                        },
+                        {
+                            "name": "Nicaragua",
+                            "id": "NCA"
+                        },
+                        {
+                            "name": "Panama",
+                            "id": "PAN"
+                        },
+                        {
+                            "name": "Paraguay",
+                            "id": "PAR"
+                        },
+                        {
+                            "name": "Peru",
+                            "id": "PER"
+                        },
+                        {
+                            "name": "Suriname",
+                            "id": "SUR"
+                        },
+                        {
+                            "name": "Trinidad and Tobago",
+                            "id": "TRI"
+                        },
+                        {
+                            "name": "Uruguay",
+                            "id": "URU"
+                        },
+                        {
+                            "name": "Venezuela",
+                            "id": "VEN"
+                        }
+                    ]
+                },
+                {
+                    "name": "Northern America",
+                    "id": "Northern America",
+                    "children": [
+                        {
+                            "name": "Canada",
+                            "id": "CAN"
+                        },
+                        {
+                            "name": "United States",
+                            "id": "USA"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Oceania",
+            "id": "Oceania",
+            "children": [
+                {
+                    "name": "Australia and New Zealand",
+                    "id": "Australia and New Zealand",
+                    "children": [
+                        {
+                            "name": "Australia",
+                            "id": "AUS"
+                        },
+                        {
+                            "name": "New Zealand",
+                            "id": "NZL"
+                        }
+                    ]
+                },
+                {
+                    "name": "Melanesia",
+                    "id": "Melanesia",
+                    "children": [
+                        {
+                            "name": "Fiji",
+                            "id": "FIJ"
+                        },
+                        {
+                            "name": "Papua New Guinea",
+                            "id": "PNG"
+                        },
+                        {
+                            "name": "Vanuatu",
+                            "id": "VAN"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "maxDensity": 0.001756073373447941,
+        "minRating": 901.0,
+        "maxRating": 2982.0
+    }
+}
