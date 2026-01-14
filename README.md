@@ -24,7 +24,7 @@ The project relies on **D3.js (v7)** for the interactive frontend and **Python**
 ### Frontend
 
 * **D3.js v7** (included via CDN in `index.html`)
-* No local installation required for the interface.
+* No local installation required for the interface
 
 ### Backend (Preprocessing)
 
@@ -57,7 +57,7 @@ pip install -r requirements.txt
 ├── processed_ratings.csv   # Cleaned dataset (month, federation, rating)
 ├── requirements.txt        # Python dependencies list
 ├── README.md               # This documentation
-└── data/                   # Raw FIDE data (source files)
+└── data/                   # Raw FIDE data (not included in submission ZIP, see Section 4)
     ├── players.tsv
     ├── ratings.tsv
     ├── countries.tsv
@@ -66,7 +66,29 @@ pip install -r requirements.txt
 
 ---
 
-## 4. How to Run (Step-by-Step)
+## 4. Data Setup (Important)
+
+The visualization works **out-of-the-box** using the included `processed_ratings.csv` and `structure.json` files. **You do NOT need the raw data to run the website.**
+
+However, due to email attachment size limitations (approximately **100MB+**), the **raw FIDE dataset is excluded** from the submission ZIP file.
+
+The raw data is **only required** if you wish to run the `preprocess.py` script to regenerate the data or adjust the preprocessing calculations.
+
+To do so:
+
+1. Obtain the raw FIDE TSV files (provided separately or downloaded from FIDE).
+2. Manually copy the following files into the `data/` folder:
+
+   * `players.tsv`
+   * `ratings.tsv`
+   * `countries.tsv`
+   * `iso3.tsv`
+
+Once these files are in place, you may proceed with data regeneration.
+
+---
+
+## 5. How to Run (Step-by-Step)
 
 ### Step 1: Run a Local Server
 
@@ -75,24 +97,29 @@ Because this project loads external data files (`.json` and `.csv`), browser sec
 **Using Python (recommended):**
 
 1. Open your terminal or command prompt.
+
 2. Navigate to the project folder.
+
 3. Run:
 
    ```bash
    python -m http.server 8000
    ```
+
 4. Open your browser and go to: [http://localhost:8000](http://localhost:8000)
 
 ### Step 2: (Optional) Regenerate Data
 
-The submission includes pre-generated data files. If you wish to re-run the calculations or change the KDE bandwidth:
+If you wish to regenerate the processed data or modify KDE parameters:
 
-1. Ensure the `data/` folder contains the raw TSV files.
+1. Ensure the raw data files are present in the `data/` folder (see **Section 4: Data Setup**).
+
 2. Install dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
+
 3. Run the preprocessing script:
 
    ```bash
@@ -101,14 +128,14 @@ The submission includes pre-generated data files. If you wish to re-run the calc
 
 This will update:
 
-* `structure.json` (including new max-density statistics)
+* `structure.json` (including updated density statistics)
 * `processed_ratings.csv`
 
-Finally, refresh the webpage (clear cache if needed, or use the timestamped version in `main.js`).
+Refresh the webpage afterward (clear cache if necessary).
 
 ---
 
-## 5. User Guide & Features
+## 6. User Guide & Features
 
 ### Overview Mode
 
@@ -117,7 +144,7 @@ By default, the chart displays the **World** distribution curve.
 ### Comparison Mode
 
 * Use the **Sidebar** to select specific countries or regions.
-* Selection is limited to **6 countries simultaneously** to keep the chart readable.
+* Selection is limited to **6 countries simultaneously** to maintain readability.
 
 ### Search
 
